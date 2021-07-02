@@ -3,11 +3,11 @@
 <p align="center">
 This tracker aims to show the numbers & trends of people affected, recovered and deceased due to COVID-19
 </p>
-<p align='center'>
+ <!-- <p align='center'>
 <img alt="UI" src="./src/images/image.png"  align='center'/>
-</p>
+</p>-->
 
-<p align="center">
+<!-- <p align="center">
 <a href="https://github.com/sabesansathananthan/covid-19-tracker">
       <img alt="Open Source Love svg2" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103" />
     </a><a href="https://github.com/sabesansathananthan/covid-19-tracker/blob/master/LICENSE">
@@ -19,7 +19,7 @@ This tracker aims to show the numbers & trends of people affected, recovered and
     </a><a href="https://twitter.com/intent/tweet?text=Wow,%20I%20used%20covid-19-tracker.%20That%20is%20excellent.%20Thank%20you%20@TheSabesan">
       <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTheSabesan" />
     </a>
-</p>
+</p> 
 
 ## 🛠️ Built with
 
@@ -89,4 +89,4 @@ Don't forget to give a star :star: for this repo :slightly_smiling_face:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](./.github/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](./.github/LICENSE) file for details -->
