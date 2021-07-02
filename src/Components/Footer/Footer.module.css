@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  justify-content: center;
+  padding: 1vh;
+  margin: 0vh;
+}
+
+.list {
+  li {
+    display: inline-block;
+    a {
+      color: #cccccc;
+      font-size: 14px;
+      @include transition;
+    }
+  }
+}
