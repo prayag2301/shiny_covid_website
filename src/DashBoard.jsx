@@ -15,6 +15,7 @@ const DashBoard = ({ data, country, handleCountryChange }) => {
         
         <br />
         <br />
+        <br />
         <text>
           <b>Global and Country Wise Cases of Corona Virus</b>
         </text>

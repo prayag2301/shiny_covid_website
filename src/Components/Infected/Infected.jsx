@@ -17,13 +17,15 @@ const Infected = ({data: {confirmed}, country}) => {
                 <CountUp
                   start={0}
                   end={confirmed.value}
-                  duration={2}
+                  duration={3}
                   separator=","
                 />
               </Typography>
             <br />
             <br />
-            <Link to ="/">Back to dashboard</Link>
+           
+            <Link to ="/"  >Back to dashboard</Link>
+           
         </div>
         
     );

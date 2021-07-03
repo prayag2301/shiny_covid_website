@@ -1,7 +1,8 @@
 .container {
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 90%);
   color: white;
   width: 100%;
   justify-content: center;

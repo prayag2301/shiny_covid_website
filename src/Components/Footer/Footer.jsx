@@ -77,20 +77,21 @@ const Footer = () => {
             textAlign: "center",
           }}
         >
-          Created with care by{" "}
+          Created by{" "}
           <a
             href="https://github.com/sabesansathananthan/covid-19-tracker"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "rgba(250,0,2,0.8)", textDecoration: "none" }}
+            style={{ color: "whitesmoke", textDecoration: "none" }}
           >
-            Aagam Prayag Taarush !
+            3 MUSKETEERS
           </a>
         </h6>
       </div>
       <div className={styles.container}>
         <br />
-        <ul className="list" style={{ listStyleType: "none" }}>
+        <br /><br />
+        <ul className="list" style={{ color: "black",  listStyleType: "none" }}>
           {SocialWidget.map((data, key) => {
             return (
               <li
@@ -124,15 +125,7 @@ const Footer = () => {
             textAlign: "center",
           }}
         >
-          Data provided 💖 by{" "}
-          <a
-            href="https://github.com/mathdroid/covid-19-api"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "rgba(250,0,2,0.8)", textDecoration: "none" }}
-          >
-            Mathdroid
-          </a>
+       
         </h6>
       </div>
     </React.Fragment>
