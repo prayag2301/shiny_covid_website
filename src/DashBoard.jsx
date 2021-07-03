@@ -5,6 +5,7 @@ import styles from "./DashBoard.module.css";
 //import { fetchData } from "./api";
 import coronaImage from "./images/image.png";
 import Footer from "./Components/Footer/Footer";
+import Faq from "./Components/FAQ/Faq";
 
 
 const DashBoard = ({ data, country, handleCountryChange }) => {
@@ -29,6 +30,7 @@ const DashBoard = ({ data, country, handleCountryChange }) => {
         <Cards data={data} country={country} />
         <CountryPicker handleCountryChange={handleCountryChange} country={country} />
         <Chart data={data} country={country} />
+        <Faq />
         <Footer />
       </div>
     );
