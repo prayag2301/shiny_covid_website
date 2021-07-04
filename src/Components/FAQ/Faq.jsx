@@ -1,52 +1,64 @@
-import React, { Component } from 'react';
-import Faq from 'react-faq-component';
+import React, { useState } from 'react'
+import FAQ from './FAQ'
+import styles from './newfaq.css'
 
 
-const data = {
-  title: "FAQ about Covid-19",
-  rows: [
+
+
+function Faq() {
+  const [faqs, setfaqs] = useState([
     {
-      title: "Can you still get Covid If you're fully vaccinated?",
-      content: "Doctors say even fully vaccinated people need to pay attention to Covid-19 symptoms, such as headache and congestion."
+      question: 'Is it ok for me to donate blood?',
+      answer: 'In healthcare settings across the United States, donated blood is a lifesaving, essential part of caring for patients. The need for donated blood is constant, and blood centers are open and in urgent need of donations. CDC encourages people who are well to continue to donate blood if they are able, even if they are practicing social distancing because of COVID-19. CDC is supporting blood centers by providing recommendations that will keep donors and staff safe. Examples of these recommendations include spacing donor chairs 6 feet apart, thoroughly adhering to environmental cleaning practices, and encouraging donors to make donation appointments ahead of time.',
+      open: true
     },
     {
-      title: "Does the WHO recommend the Covid vaccine for children?",
-      content: "The WHO states that since they tend to experience mild disease symptoms compared to adults, they aren't in urgent need for vaccinations unless they have a pre-existing condition. Instead, vaccines should be prioritized to those with conditions, health care workers, and older individuals."
+      question: 'What are some manifestations of post COVID-19 conditions?',
+      answer: 'Known manifestations of post-COVID conditions include a range of troubling physical symptoms, such as severe fatigue and increased risk of damage to the heart, lungs and brain.',
+      open: true
     },
     {
-      title: "Is the Covid vaccine safe for pregnancy?",
-      content: "The ministry informed that the COVID-19 vaccines available are safe and vaccination protects pregnant women against COVID-19 illness/disease. Like any medicine, a vaccine may have side effects which are normally mild."
+      question: 'Can you transmit Covid after being fully vaccinated?',
+      answer: 'while vaccinated people are less likely to be hospitalized because of the disease, this doesnt mean they should drop their guard: they can still get ill from the virus and can still spread it to others.',
+      open: true
     },
     {
-      title: "In what conditions does COVID-19 survive the longest?",
-      content: "Coronaviruses die very quickly when exposed to the UV light in sunlight. Like other enveloped viruses, SARS-CoV-2 survives longest when the temperature is at room temperature or lower, and when the relative humidity is low (<50%)."
-    }]
-}
+      question: 'Will you test positive for Covid after vaccination?',
+      answer: 'Getting vaccinated wont make you show up as positive on PCR tests. That is because these tests look for copies of the genetic material of the virus as an indication that you have been infected.',
+      open: true
+    }
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <Faq data={data}
-    styles={{
-        
-  bgColor: "white",
+  ]);
 
-        titlePaddingLeft:'50px',
-        titleTextColor: "#48482a",
-        rowTitleColor: "#183f7d",
-        rowTitleTextSize: 'large',
-        rowTitlePaddingLeft: '50px',
-        rowContentColor: "#48484a",
-        rowContentTextSize: '16px',
-        rowContentPaddingTop: '10px',
-        rowContentPaddingBottom: '10px',
-        rowContentPaddingLeft: '50px',
-        rowContentPaddingRight: '150px',
-        arrowColor: "black",
-    }} 
-        />
-      </div>
-    )
+
+
+  const toggleFAQ = index => {
+    setfaqs(faqs.map((faq, i) => {
+      if (i === index) {
+        faq.open = !faq.open
+      }
+      else {
+        faq.open = false
+      }
+
+      return faq;
+    }))
   }
+
+  return (
+    <div className="Faq">
+      <h1>FAQ SECTION</h1>
+      <div className="faqs">
+        {faqs.map((faq, i) => (
+          <div style={{
+            margin: '20px',
+          }} >
+            <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
+
+export default Faq

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(247, 170, 170);
   width: 100%;
   margin: 0;
 }
@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   margin: 0;
   width: 100%;
-  background: whitesmoke; /* Chrome 10-25, Safari 5.1-6 */
+  background: rgb(243, 136, 136); /* Chrome 10-25, Safari 5.1-6 */
 }
 .image {
   width: 370px;
