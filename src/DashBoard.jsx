@@ -31,6 +31,10 @@ const DashBoard = ({ data, country, handleCountryChange }) => {
         <CountryPicker handleCountryChange={handleCountryChange} country={country} />
         <Chart data={data} country={country} />
         <Faq />
+        <br />
+        <br />
+        <br />
+        <br /><br />
         <Footer />
       </div>
     );

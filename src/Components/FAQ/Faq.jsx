@@ -31,9 +31,12 @@ export default class App extends Component {
     styles={{
         
   bgColor: "white",
+
+        titlePaddingLeft:'50px',
         titleTextColor: "#48482a",
-        rowTitleColor: "#78789a",
+        rowTitleColor: "#183f7d",
         rowTitleTextSize: 'large',
+        rowTitlePaddingLeft: '50px',
         rowContentColor: "#48484a",
         rowContentTextSize: '16px',
         rowContentPaddingTop: '10px',

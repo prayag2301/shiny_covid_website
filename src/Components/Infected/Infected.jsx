@@ -24,7 +24,7 @@ const Infected = ({data: {confirmed}, country}) => {
             <br />
             <br />
            
-            <Link to ="/"  >Back to dashboard</Link>
+            <Link to ="/"  className={styles.dash}>Back to dashboard</Link>
            
         </div>
         
