@@ -8,8 +8,8 @@ import styles from './newfaq.css'
 function Faq() {
   const [faqs, setfaqs] = useState([
     {
-      question: 'Is it ok for me to donate blood?',
-      answer: 'In healthcare settings across the United States, donated blood is a lifesaving, essential part of caring for patients. The need for donated blood is constant, and blood centers are open and in urgent need of donations. CDC encourages people who are well to continue to donate blood if they are able, even if they are practicing social distancing because of COVID-19. CDC is supporting blood centers by providing recommendations that will keep donors and staff safe. Examples of these recommendations include spacing donor chairs 6 feet apart, thoroughly adhering to environmental cleaning practices, and encouraging donors to make donation appointments ahead of time.',
+      question: 'Is it ok for me to donate blood after vaccination?',
+      answer: 'In healthcare settings, globally, donated blood is a lifesaving, essential part of caring for patients. The need for donated blood is constant, and blood centers are open and in urgent need of donations. CDC encourages people who are well to continue to donate blood if they are able, even if they are practicing social distancing because of COVID-19. CDC is supporting blood centers by providing recommendations that will keep donors and staff safe. Examples of these recommendations include spacing donor chairs 6 feet apart, thoroughly adhering to environmental cleaning practices, and encouraging donors to make donation appointments ahead of time.',
       open: true
     },
     {
@@ -47,7 +47,7 @@ function Faq() {
 
   return (
     <div className="Faq">
-      <h1>FAQ SECTION</h1>
+      <h1 style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', backgroundColor: '#3c3c3c', color: 'aliceblue' }}>FAQ SECTION</h1>
       <div className="faqs">
         {faqs.map((faq, i) => (
           <div style={{
