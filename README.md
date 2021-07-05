@@ -1,8 +1,20 @@
 <h1 align='center'>COVID-19 Tracker</h1>
 
 <p align="center">
-This tracker aims to show the numbers & trends of people affected, recovered and deceased due to COVID-19
+This tracker aims to show the numbers & trends of people affected, recovered and deceased due to COVID-19.
+Our main objective of creating this website is to help people to have an overview of covid-19 cases around the world in different countries.
+We've created templates for infected, recovered, deaths and active cases in covid -19 which helps the user to have an insight about each of them independently.
+ 
 </p>
+<p>
+ In addition to the templates, we've also created graphs- one global and the other for each country depicting the number of infected and deceased cases with a toggle embedded within the graph
+ </p>
+ <p>
+ We've also created an faq section to allow the user to gain knowledge about the common queries related to covid -19.
+ Lastly we have also embedded links to different platforms.
+ 
+ </p>
+ 
  <!-- <p align='center'>
 <img alt="UI" src="./src/images/image.png"  align='center'/>
 </p>-->
